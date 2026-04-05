@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  /* max-width: 80%; */
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(248, 246, 246);
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: -1px 4px 11px 1px #000000;
+}
+.card .top {
+  display: flex;
+  justify-content: space-between;
+}
+.card img {
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  object-fit: contain;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 50%;
+  /* object-fit: cover; */
+  cursor: pointer;
+  object-position: center;
+}
+.top button {
+  width: 75px;
+  border: 1px solid #dadada;
+  color: #acacac;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.save {
+  font-size: 0.9rem;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  /* background-color: pink; */
+}
+.company-name {
+  font-size: 1.1rem;
+}
+.time {
+  color: grey;
+  font-size: 0.7rem;
+}
+.role {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tags {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.tag-1 {
+  width: 86px;
+  padding: 5px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgb(220, 220, 220);
+}
+.tag-2 {
+  max-width: 150px;
+  padding: 5px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgb(220, 220, 220);
+}
+.buttom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  border-top: 1px solid rgb(220, 220, 220);
+  padding-top: 15px;
+}
+.location {
+  font-size: 0.6rem;
+  color: rgba(176, 174, 174, 0.791);
+}
+.apply-now {
+  padding: 8px 6px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.apply-now:hover {
+  transform: translateY(-3px);
+}
+
+.top button:hover {
+  transform: scale(1.1);
+}
